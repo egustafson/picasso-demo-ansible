@@ -1,0 +1,9 @@
+---
+- hosts: all
+  remote_user: build
+  tasks:
+  - name: ping host
+    ping:
+  - name: ping as root
+    sudo: yes
+    ping:
